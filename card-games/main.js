@@ -38,7 +38,6 @@
 			deck_div.innerHTML = "";
 			for (var i = this.deck_data.length - 1; i >= 0; i--) {
 				var card = new Card();
-				console.log(this.deck_data[i]);
 				card.id = "card-" + i;
 				card.data = this.deck_data[i];
 				card.buildCard(parentFrag);
@@ -51,7 +50,6 @@
 
 	// Card
 	var Card = function () {
-		console.log(this);
 		this.id = "";
 		this.data = "";
 
@@ -88,9 +86,11 @@
 
 			this.cardCont.id = this.id;
 			this.cardCont.appendChild(flipDiv);
+			this.cardCont.onclick = function(e) {
+				e.currentTarget.classList.toggle('flip_card');
+				e.currentTarget.classList.toggle('slide_over');
+			}
 
-			//console.log(parentFrag);
-			//console.log(abc);
 			parentFrag.appendChild(this.cardCont);
 		}
 	}

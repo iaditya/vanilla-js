@@ -1,0 +1,28 @@
+
+## Design Patterns
+* Designing Service layers => Module Pattern
+* Over Complicate Object Interface => Facade Pattern
+* Visibiliy into State Changes => Observer Pattern
+
+## Types of Design Patterns
+* Creational => Constructor, Module(Grouping of methods & services), Factory, Singleton
+* Structural(actual object) => Decorator, Facade, Flyweight
+* Behavioral (how objects relate to each other) => Command, Mediator, Observer 
+
+## Creational -> create objects.
+   * Constructor -> create new objects with their own object scope.
+   * Factory -> simplify the object creation (gulp-load-plugins does this way)
+   * Abstract Factory -> simplefy the object from multiple classes objects.
+   * Singleton -> Used to restrict an object to one instance across the application.
+
+## Structural -> Concerned about how objects are made up and simplify relationship between objects. [Extend & Simplify]
+   * Module -> Encapsulate of methods. eg- services in angular.
+   * mixin -> create a obj with helper functions and assign in other Object prototype.
+   * Decorator -> Used to add new functionality to existing object without being obtrusive. 
+   * Facade -> Used to provide a simple interface to a complicated system.
+   * Flyweight -> Conserves memory by sharing portions of an object between objects.
+
+## Behavioral -> Concerned with the assignment of responsibilities between objects & how they communicate
+   * Observer -> Allows a collection of objects to watch on object and be notofied of changes.
+   * Mediator(Pub Sub) -> Controls communcation between objects so neither object has to be coupled to others. (many to many relationship)
+   * Command Pattern -> Encapsulates the calling of methods as an object. Fully decouples the execution from the implementation. support undo operations.

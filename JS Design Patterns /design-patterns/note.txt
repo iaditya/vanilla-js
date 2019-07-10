@@ -1,0 +1,3 @@
+
+## common Objects ->
+   * chaining -> Popular in JQuery. Function should return this.
